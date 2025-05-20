@@ -18,7 +18,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.container {
+.container, .main-box {
     max-width: 900px;
     margin: 30px auto;
     background: #fff;
@@ -31,4 +31,35 @@ footer {
     color: #888;
     margin: 40px 0 10px 0;
     font-size: 0.95em;
+}
+@media (max-width: 700px) {
+    .container, .main-box {
+        max-width: 98vw;
+        padding: 18px 5vw;
+        margin: 18px auto 0 auto;
+    }
+    ul, .main-box ul {
+        padding-left: 10px;
+    }
+    h1, h2 {
+        font-size: 1.3em;
+    }
+    .main-box a, .main-box button {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 18px;
+        font-size: 1em;
+    }
+}
+@media (max-width: 430px) {
+    .container, .main-box {
+        padding: 10px 2vw;
+    }
+    h1, h2 {
+        font-size: 1.1em;
+    }
+    .main-box a, .main-box button {
+        font-size: 0.95em;
+        padding: 8px 0;
+    }
 }
